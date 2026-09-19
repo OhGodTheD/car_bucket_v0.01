@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const source=fs.readFileSync('extension/extractor/normalize.js','utf8');
+const context={window:{},console};vm.createContext(context);vm.runInContext(source,context);
+const n=context.window.CarBucketNormalize;
+assert.equal(n.vin('VIN 1FTFW3L52TKD05316'),'1FTFW3L52TKD05316');
+assert.equal(n.year('2026 Ford F-150'),'2026');
+assert.equal(n.mileage('55,896 miles'),55896);
+assert.equal(n.mileage('10,000 km'),6214);
+assert.equal(n.number('$85,314'),85314);
+console.log('normalize smoke tests passed');

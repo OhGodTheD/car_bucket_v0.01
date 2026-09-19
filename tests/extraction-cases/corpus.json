@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "purpose": "Reusable URL corpus for regression testing universal vehicle extraction. Expected values are only recorded where directly established by the URL or prior verified test result.",
+  "cases": [
+    {
+      "id": "alserra-2017-ram-sport",
+      "url": "https://www.alserra.com/used-Grand+Blanc-2017-RAM-1500-Sport-1C6RR7MT8HS765569",
+      "expected": {
+        "vin": "1C6RR7MT8HS765569"
+      }
+    },
+    {
+      "id": "alserra-2023-ram-laramie",
+      "url": "https://www.alserra.com/used-Grand+Blanc-2023-RAM-1500-Laramie-1C6SRFJT0PN661218",
+      "expected": {
+        "vin": "1C6SRFJT0PN661218"
+      }
+    },
+    {
+      "id": "familydeal-2027-bolt-1",
+      "url": "https://www.familydeal.com/new-Plymouth-2027-Chevrolet-Bolt-LT-1G1FY6EV7VF105335",
+      "expected": {
+        "vin": "1G1FY6EV7VF105335"
+      }
+    },
+    {
+      "id": "familydeal-2027-bolt-2",
+      "url": "https://www.familydeal.com/new-Plymouth-2027-Chevrolet-Bolt-LT-1G1FY6EV0VF103491",
+      "expected": {
+        "vin": "1G1FY6EV0VF103491"
+      }
+    },
+    {
+      "id": "cargurus-455982986",
+      "url": "https://www.cargurus.com/details/455982986",
+      "expected": {}
+    },
+    {
+      "id": "toyotabyfox-2026-tundra",
+      "url": "https://www.toyotabyfox.com/new/Toyota/2026-Toyota-Tundra-f6a2322aac18003fe20877a26f34f814.htm",
+      "expected": {}
+    },
+    {
+      "id": "familydeal-2027-qx60",
+      "url": "https://www.familydeal.com/new-Ann+Arbor-2027-INFINITI-QX60-Autograph-5N1AL1HZ2VC331622",
+      "expected": {
+        "vin": "5N1AL1HZ2VC331622"
+      }
+    },
+    {
+      "id": "bowman-2026-trax-ls",
+      "url": "https://www.bowmanchevy.com/inventory/new-2026-chevrolet-trax-ls-front-wheel-drive-suv-kl77lfep0tc242513/",
+      "expected": {
+        "vin": "KL77LFEP0TC242513"
+      }
+    },
+    {
+      "id": "bowman-2026-trax-1rs-1",
+      "url": "https://www.bowmanchevy.com/inventory/new-2026-chevrolet-trax-1rs-front-wheel-drive-suv-kl77lgepxtc217978/",
+      "expected": {
+        "vin": "KL77LGEPXTC217978"
+      }
+    },
+    {
+      "id": "bowman-2026-trax-1rs-2",
+      "url": "https://www.bowmanchevy.com/inventory/new-2026-chevrolet-trax-1rs-front-wheel-drive-suv-kl77lgep4tc245453/",
+      "expected": {
+        "vin": "KL77LGEP4TC245453"
+      }
+    },
+    {
+      "id": "randywise-2024-f150",
+      "url": "https://www.randywiseford.net/used-Ortonville-2024-Ford-F+150-Lariat-1FTFW5L53RFC22796",
+      "expected": {
+        "vin": "1FTFW5L53RFC22796"
+      }
+    },
+    {
+      "id": "randywise-2026-bronco-sport-1",
+      "url": "https://www.randywiseford.net/new-Ortonville-2026-Ford-Bronco+Sport-Big+Bend-3FMCR9BNXTRF14499",
+      "expected": {
+        "vin": "3FMCR9BNXTRF14499"
+      }
+    },
+    {
+      "id": "randywise-2026-maverick",
+      "url": "https://www.randywiseford.net/new-Ortonville-2026-Ford-Maverick-XLT-3FTTW8JA4TRB29705",
+      "expected": {
+        "vin": "3FTTW8JA4TRB29705"
+      }
+    },
+    {
+      "id": "randywise-2026-bronco-sport-2",
+      "url": "https://www.randywiseford.net/new-Ortonville-2026-Ford-Bronco+Sport-Big+Bend-3FMCR9BN9TRF02103",
+      "expected": {
+        "vin": "3FMCR9BN9TRF02103"
+      }
+    },
+    {
+      "id": "randywise-2026-bronco-sport-heritage",
+      "url": "https://www.randywiseford.net/new-Ortonville-2026-Ford-Bronco+Sport-Heritage-3FMCR9GN6TRE84250",
+      "expected": {
+        "vin": "3FMCR9GN6TRE84250"
+      }
+    },
+    {
+      "id": "randywise-2022-f350",
+      "url": "https://www.randywiseford.net/used-Ortonville-2022-Ford-F+350SD-Platinum-1FT8W3BT8NED60086",
+      "expected": {
+        "vin": "1FT8W3BT8NED60086"
+      }
+    },
+    {
+      "id": "randywise-2024-f250",
+      "url": "https://www.randywiseford.net/used-Ortonville-2024-Ford-F+250SD-XLT-1FT7W2BN7REE80202",
+      "expected": {
+        "vin": "1FT7W2BN7REE80202"
+      }
+    },
+    {
+      "id": "waldorf-2027-f650",
+      "url": "https://www.waldorfford.com/new-Waldorf-2027-Ford-F+650+SD-Masonry+Dump-1FDNF6DE0VDF02242",
+      "expected": {
+        "vin": "1FDNF6DE0VDF02242"
+      }
+    },
+    {
+      "id": "waldorf-2019-kicks",
+      "url": "https://www.waldorfford.com/used-Waldorf-2019-Nissan-Kicks-SR-3N1CP5CU3KL561113",
+      "expected": {
+        "vin": "3N1CP5CU3KL561113"
+      }
+    },
+    {
+      "id": "waldorf-2013-rogue",
+      "url": "https://www.waldorfford.com/used-Waldorf-2013-Nissan-Rogue-S-JN8AS5MV3DW133702",
+      "expected": {
+        "vin": "JN8AS5MV3DW133702"
+      }
+    },
+    {
+      "id": "autotrader-789603535",
+      "url": "https://www.autotrader.com/cars-for-sale/vehicle/789603535",
+      "expected": {}
+    },
+    {
+      "id": "autotrader-786022669",
+      "url": "https://www.autotrader.com/cars-for-sale/vehicle/786022669",
+      "expected": {}
+    },
+    {
+      "id": "autotrader-790894900",
+      "url": "https://www.autotrader.com/cars-for-sale/vehicle/790894900",
+      "expected": {}
+    },
+    {
+      "id": "autotrader-771679037",
+      "url": "https://www.autotrader.com/cars-for-sale/vehicle/771679037",
+      "expected": {}
+    },
+    {
+      "id": "autotrader-788985309",
+      "url": "https://www.autotrader.com/cars-for-sale/vehicle/788985309",
+      "expected": {}
+    },
+    {
+      "id": "autotrader-789473076",
+      "url": "https://www.autotrader.com/cars-for-sale/vehicle/789473076",
+      "expected": {}
+    },
+    {
+      "id": "randywise-search",
+      "url": "https://www.randywiseford.net/searchnew.aspx",
+      "kind": "inventory-page",
+      "expected": {}
+    },
+    {
+      "id": "suburban-inventory",
+      "url": "https://www.suburbanford.com/all-inventory/index.htm?compositeType=new&trim=Raptor",
+      "kind": "inventory-page",
+      "expected": {}
+    },
+    {
+      "id": "szott-inventory",
+      "url": "https://www.szottford.com/new-inventory/index.htm",
+      "kind": "inventory-page",
+      "expected": {}
+    },
+    {
+      "id": "autotrader-search",
+      "url": "https://www.autotrader.com/cars-for-sale/all-cars/pontiac-mi?zip=48340",
+      "kind": "inventory-page",
+      "expected": {}
+    }
+  ]
+}

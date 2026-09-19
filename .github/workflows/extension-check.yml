@@ -29,3 +29,8 @@ jobs:
           mkdir -p dist
           cd extension
           zip -qr ../dist/car-bucket-v0.14.0-dev.zip .
+      - name: Upload demo build
+        uses: actions/upload-artifact@v4
+        with:
+          name: car-bucket-v0.14.0-dev
+          path: dist/car-bucket-v0.14.0-dev.zip

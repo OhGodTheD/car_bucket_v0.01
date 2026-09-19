@@ -1,7 +1,7 @@
 {
   "manifest_version":3,
   "name":"Car Bucket",
-  "version":"0.14.0-dev",
+  "version":"0.14.0",
   "description":"Universal automotive listing capture and bucket management.",
   "minimum_chrome_version":"114",
   "permissions":["storage","activeTab","scripting","sidePanel","tabs"],

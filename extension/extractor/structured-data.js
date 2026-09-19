@@ -77,6 +77,7 @@
     const address = node.seller?.address || node.provider?.address || null;
 
     return {
+      data: {
       year: clean(node.vehicleModelDate || node.dateVehicleFirstRegistered || ''),
       make: clean(node.brand?.name || node.manufacturer || ''),
       model: clean(node.model || ''),
@@ -87,11 +88,9 @@
       dealer: clean(node.seller?.name || node.provider?.name || ''),
       location: clean(address ? [address.addressLocality, address.addressRegion].filter(Boolean).join(', ') : ''),
       image: Array.isArray(node.image) ? node.image[0] : clean(node.image || ''),
-      extraction: {
-        layer: 'structured-data',
-        confidence: Math.min(0.99, 0.55 + best.score / 200),
-        evidence
-      }
+      },
+      evidence,
+      confidence: Object.fromEntries(['year','make','model','trim','mileage','vin','price','dealer','location','image'].filter(k => { const v = ({year: clean(node.vehicleModelDate || node.dateVehicleFirstRegistered || ''), make: clean(node.brand?.name || node.manufacturer || ''), model: clean(node.model || ''), trim: clean(node.vehicleConfiguration || ''), mileage: mileage != null ? clean(mileage) : null, vin: clean(node.vehicleIdentificationNumber || ''), price: best.price, dealer: clean(node.seller?.name || node.provider?.name || ''), location: clean(address ? [address.addressLocality, address.addressRegion].filter(Boolean).join(', ') : ''), image: Array.isArray(node.image) ? node.image[0] : clean(node.image || '') })[k]; return v != null && v !== '' }).map(k => [k, Math.min(0.99, 0.55 + best.score / 200)]))
     };
   }
 

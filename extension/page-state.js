@@ -1,0 +1,1 @@
+(()=>{window.addEventListener('CAR_BUCKET_REQUEST_STATE',()=>{const keys=['__NEXT_DATA__','__INITIAL_STATE__','__PRELOADED_STATE__','__INITIAL_DATA__'];const payload={};for(const k of keys)if(window[k])payload[k]=window[k];window.postMessage({type:'CAR_BUCKET_PAGE_STATE',payload},'*')});window.dispatchEvent(new Event('CAR_BUCKET_PAGE_STATE_READY'))})();

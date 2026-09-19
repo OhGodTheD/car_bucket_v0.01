@@ -1,0 +1,31 @@
+name: Car Bucket Extension Check
+on:
+  push:
+    paths:
+      - "extension/**"
+      - "tests/**"
+      - ".github/workflows/extension-check.yml"
+  pull_request:
+    paths:
+      - "extension/**"
+      - "tests/**"
+      - ".github/workflows/extension-check.yml"
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate manifest
+        run: node -e "JSON.parse(require('fs').readFileSync('extension/manifest.json','utf8')); console.log('manifest ok')"
+      - name: Syntax check JavaScript
+        run: find extension -name '*.js' -print0 | xargs -0 -n1 node --check
+      - name: Run extractor smoke tests
+        run: node tests/smoke/normalize.test.js
+      - name: Package extension
+        run: |
+          mkdir -p dist
+          cd extension
+          zip -qr ../dist/car-bucket-v0.14.0-dev.zip .

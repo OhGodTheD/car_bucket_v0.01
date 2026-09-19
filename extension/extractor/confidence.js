@@ -1,0 +1,1 @@
+(()=>{const rank=e=>{e=String(e||'').toLowerCase();if(/schema|structured|vin-anchored/.test(e))return .97;if(/semantic|attribute|embedded/.test(e))return .86;if(/resource|api/.test(e))return .82;if(/fallback/.test(e))return .55;return 0};const merge=(a,b)=>b?.value!=null&&(!a||(b.confidence||0)>(a.confidence||0))?b:a;window.CarBucketConfidence={rank,merge}})();

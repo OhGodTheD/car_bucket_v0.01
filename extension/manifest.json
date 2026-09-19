@@ -1,0 +1,16 @@
+{
+  "manifest_version":3,
+  "name":"Car Bucket",
+  "version":"0.14.0-dev",
+  "description":"Universal automotive listing capture and bucket management.",
+  "minimum_chrome_version":"114",
+  "permissions":["storage","activeTab","scripting","sidePanel","tabs"],
+  "action":{"default_title":"Open Car Bucket"},
+  "side_panel":{"default_path":"sidepanel/index.html"},
+  "background":{"service_worker":"background.js"},
+  "content_scripts":[
+    {"matches":["http://*/*","https://*/*"],"js":["page-state.js"],"run_at":"document_start","world":"MAIN"},
+    {"matches":["http://*/*","https://*/*"],"js":["extractor/normalize.js","extractor/confidence.js","extractor/page-classification.js","extractor/structured-data.js","extractor/semantic-dom.js","extractor/attributes.js","extractor/embedded-state.js","extractor/fallback.js","extractor/resources.js","extractor/universal.js","content.js"],"run_at":"document_idle"}
+  ],
+  "host_permissions":["http://*/*","https://*/*"]
+}
